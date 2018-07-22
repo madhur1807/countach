@@ -370,7 +370,9 @@
                                 <div class="email">
                                     <i class="fa fa-envelope"><span>tagautoaccessories@gmail.com</span></i>
                                 </div>
-                                <div id="map"></div>
+                                <div id="map" style="border:3px solid;overflow: hidden;height: 333px" >
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.1987339947414!2d77.13233271508378!3d28.683701182397662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03b87b7c21b3%3A0xc60dfef1baf20fb2!2s3426%2FB%2C+Mahindra+Park%2C+Rani+Bagh%2C+Pitampura%2C+Delhi%2C+110034!5e0!3m2!1sen!2sin!4v1532251707126" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -491,41 +493,41 @@
                     stagePadding : 10
                 });
 
-                map = new GMaps({
-                    el: '#map',
-                    lat: 28.6840824,
-                    lng: 77.1333305,
-                    zoomControl: true,
-                    zoomControlOpt: {
-                        style: 'SMALL',
-                        position: 'LEFT_BOTTOM'
-                    },
-                    panControl: false,
-                    streetViewControl: false,
-                    mapTypeControl: false,
-                    overviewMapControl: false,
-                    scrollwheel: false,
-                });
+                // map = new GMaps({
+                //     el: '#map',
+                //     lat: 28.6840824,
+                //     lng: 77.1333305,
+                //     zoomControl: true,
+                //     zoomControlOpt: {
+                //         style: 'SMALL',
+                //         position: 'LEFT_BOTTOM'
+                //     },
+                //     panControl: false,
+                //     streetViewControl: false,
+                //     mapTypeControl: false,
+                //     overviewMapControl: false,
+                //     scrollwheel: false,
+                // });
 
 
-                map.addMarker({
-                    lat: 23.6911078,
-                    lng: 90.5112799,
-                    title: 'Office',
-                    details: {
-                        database_id: 42,
-                        author: 'Foysal'
-                    },
-                    click: function (e) {
-                        if (console.log)
-                            console.log(e);
-                        alert('You clicked in this marker');
-                    },
-                    mouseover: function (e) {
-                        if (console.log)
-                            console.log(e);
-                    }
-                });
+                // map.addMarker({
+                //     lat: 23.6911078,
+                //     lng: 90.5112799,
+                //     title: 'Office',
+                //     details: {
+                //         database_id: 42,
+                //         author: 'Foysal'
+                //     },
+                //     click: function (e) {
+                //         if (console.log)
+                //             console.log(e);
+                //         alert('You clicked in this marker');
+                //     },
+                //     mouseover: function (e) {
+                //         if (console.log)
+                //             console.log(e);
+                //     }
+                // });
             });
         </script>
         <!--Google Maps API-->
